@@ -1,0 +1,64 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> Trang chủ</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Nhân viên </h2>
+            <h2 class="text-dark"><%= user.name%></h2>
+        </div>
+
+        <!-- add user form -->
+         <!-- form handling -->
+ <form method="GET" id="update_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="gender" class="text-dark">Giới tính: <%= user.gender %></label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="Email" class="text-dark">Email: <%= user.email%></label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="dob" class="text-dark">Ngày sinh: <%= user.dob.slice(0 , 10) %></label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="phone" class="text-dark">Số điện thoại: <%= user.phone %></label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="address" class="text-dark">Địa chỉ: <%= user.address %></label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="position" class="text-dark">Chức vụ: <%= user.position %></label>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="status" class="text-dark">Trạng thái: <%= user.status %></label>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Trông cũng ra gì đấy !</button>
+        </div>
+
+    </div>
+</form>
+       
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

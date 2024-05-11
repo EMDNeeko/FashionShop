@@ -1,0 +1,58 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+  <!-- Main Site -->
+<main id="site-main">
+    <div class="container">
+        <div class="form-title text-center">
+            <h2 class="text-dark">Đăng nhập</h2>
+            <span class="text-light">Vui lòng đăng nhập để sử dụng hệ thống.</span>
+        </div>
+
+        <!-- add user form -->
+         <!-- form handling -->
+        <form action="/" id="login">
+            <div class="login">
+                <div class="form-group">
+                    <label for="username" class="text-light">Mã đăng nhập</label>
+                    <input type="text" name="username" value="" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="text-light">Mật khẩu</label>
+                    <input type="password" name="password" value="" placeholder="Mật khẩu">
+                </div>
+                <div class="form-group">
+                    <a href="index.ejs">
+                        <button type="submit" class="btn text-dark update">Đăng nhập</button>                    
+                    </a>
+                </div>
+            </div>
+        </form>
+        <script>
+            const form = document.getElementById('login');
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault(); // Ngăn chặn hành động mặc định của form
+
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                // Kiểm tra tên đăng nhập và mật khẩu
+                if (username === 'admin' && password === '25112003') {
+                    window.location.href("/")
+                } else {
+                    // Tên đăng nhập hoặc mật khẩu sai
+                    alert('Tên đăng nhập hoặc mật khẩu sai. Vui lòng thử lại.');
+                }
+            });
+        </script>
+       
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

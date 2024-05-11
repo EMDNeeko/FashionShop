@@ -1,0 +1,17 @@
+<% for(var i = 0; i < jobs.length; i++) { %>
+    <tr>
+        <td><%= i + 1 %></td>  
+        <td><%= jobs[i].startTime %></td>    
+        <td><%= jobs[i].endTime %></td>
+        <td><%= jobs[i].employ %></td>
+        <td><%= jobs[i].pos %></td>
+        <td>
+            <a href="/update-job?id=<%= jobs[i]._id%>" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+            <a class="btn border-shadow delete" data-id=<%= jobs[i]._id%> >
+                <span class="text-gradient"><i class="fas fa-times"></i></span>
+            </a>
+        </td>
+    </tr>
+<% } %>

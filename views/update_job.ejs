@@ -1,0 +1,51 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/job"><i class="fas fa-angle-double-left"></i> Trang chủ</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Cập nhật thông tin ca làm việc</h2>
+            <span class="text-light">Thay đổi thông tin ca làm việc ở dưới</span>
+        </div>
+
+        <!-- add form -->
+         <!-- form handling -->
+ <form method="POST" id="update_job">
+    <div class="new_job">
+        <div class="form-group">
+            <label for="startTime" class="text-light">Giờ bắt đầu</label>
+            <input type="text" name="startTime" value="<%= job.startTime%>" placeholder="00:00">
+        </div>
+        <div class="form-group">
+            <label for="endTime" class="text-light">Giờ kết thúc</label>
+            <input type="text" name="endTime" value="<%= job.endTime%>">
+        </div>
+        <div class="form-group">
+            <label for="employ" class="text-light">Người phụ trách: <span class="text-dark"><%= job.employ %></span></label>
+        </div>
+        <div class="form-group">
+            <label for="pos" class="text-light">Vị trí</label>
+            <input type="text" name="address" value="<%= job.pos%>" placeholder="Cửa hàng">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Lưu</button>
+        </div>
+
+    </div>,
+</form>
+       
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

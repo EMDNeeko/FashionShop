@@ -1,0 +1,49 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/" class="border-shadow">
+                    <span class="text-gradient">Vào trang quản lý nhân viên <i class="fas fa-user"></i></span>
+                </a>
+            </div>
+            <div class="box-nav d-flex justify-between">
+                <a href="/add-job" class="border-shadow">
+                    <span class="text-gradient">Thêm ca làm việc           <i class="fas fa-work"></i></span>
+                </a>
+            </div>
+            <div class="today">
+                Ngày: <%= new Date().getDate() %>/<%= new Date().getMonth() + 1 %>/<%= new Date().getFullYear() %>
+            </div>
+
+            <!-- form handling -->
+            <form action="/job" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Giờ bắt đầu</th>
+                            <th>Giờ kết thúc</th>
+                            <th>Nhân viên thực hiện</th>
+                            <th>Vị trí thực hiện</th>
+                            <th>Tuỳ chọn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_showJ') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

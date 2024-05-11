@@ -1,0 +1,31 @@
+ <!-- form handling -->
+ <form action="/api/jobs" method="POST" id="add_job">
+    <div class="new_job">
+        <div class="form-group">
+            <label for="startTime" class="text-light">Giờ bắt đầu</label>
+            <input type="text" name="startTime" value="00:00" placeholder="hh:mm">
+        </div>
+        <div class="form-group">
+            <label for="endTime" class="text-light">Giờ kết thúc</label>
+            <input type="text" name="endTime" value="02:00" placeholder="hh:mm">
+        </div>
+        <div class="form-group">
+            <label for="employ" class="text-light">Người thực hiện</label>
+            <select name="employ">
+                <option value = "">Chọn người thực hiện</option>
+                <% for ( var us = 0; us < users.length; us++) { %>
+                    <option value = '<%= users[us].name %>'><%= users[us].name %></option>
+                <% } %>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="pos" class="text-light">Vị trí thực hiện</label>
+            <input type="text" name="pos" value="" placeholder="Cửa hàng">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Thêm ca làm việc</button>
+        </div>
+
+    </div>
+</form>

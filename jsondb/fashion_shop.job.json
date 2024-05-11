@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "6631a231655c462004dc2d23"
+  },
+  "pos": "Phòng quản lý",
+  "day": {
+    "$date": "2024-05-01T00:00:00.000Z"
+  },
+  "startTime": "06:00",
+  "endTime": "18:00",
+  "employ": "Cam Hải Đăng",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6631b667e4b1c4338c2b2839"
+  },
+  "pos": "Quầy thanh toán",
+  "day": {
+    "$date": "2024-05-01T00:00:00.000Z"
+  },
+  "startTime": "09:00",
+  "endTime": "12:00",
+  "employ": "Đinh Thị Thu Nguyệt",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6631b693e4b1c4338c2b283e"
+  },
+  "pos": "Quầy thanh toán",
+  "day": {
+    "$date": "2024-05-01T00:00:00.000Z"
+  },
+  "startTime": "13:00",
+  "endTime": "16:00",
+  "employ": "Nguyễn Sắc",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6631badae4b1c4338c2b2843"
+  },
+  "pos": "Nhà kho",
+  "day": {
+    "$date": "2024-05-01T00:00:00.000Z"
+  },
+  "startTime": "09:00",
+  "endTime": "12:00",
+  "employ": "Còn Văn Ten",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6631bb0ee4b1c4338c2b2848"
+  },
+  "pos": "Quầy thanh toán",
+  "day": {
+    "$date": "2024-05-01T00:00:00.000Z"
+  },
+  "startTime": "17:00",
+  "endTime": "20:00",
+  "employ": "Nguyễn Huynh",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6631bb32e4b1c4338c2b284b"
+  },
+  "pos": "Nhà kho",
+  "day": {
+    "$date": "2024-05-01T00:00:00.000Z"
+  },
+  "startTime": "13:00",
+  "endTime": "16:00",
+  "employ": "Lê Minh Liêm",
+  "__v": 0
+}]

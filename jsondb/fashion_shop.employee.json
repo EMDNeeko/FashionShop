@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "663108536065d12b644db7bd"
+  },
+  "address": "Khu 2 Hoàng cương Thanh Ba Phú Thọ",
+  "name": "Cam Hải Đăng",
+  "phone": "0815935068",
+  "email": "DangCH.B21CN027@stu.ptit.edu.vn",
+  "dob": {
+    "$date": "2003-11-25T00:00:00.000Z"
+  },
+  "position": "Chủ tịch",
+  "gender": "Nam",
+  "status": "Đang hoạt động",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663108bf6065d12b644db7c4"
+  },
+  "address": "Đ.Tân Hội, Đan Phượng, Hà Nội",
+  "name": "Đinh Thị Thu Nguyệt",
+  "phone": "0888912266",
+  "email": "mottalanam@gmail.com",
+  "dob": {
+    "$date": "2003-09-07T00:00:00.000Z"
+  },
+  "position": "Nhân viên bán hàng",
+  "gender": "Nữ",
+  "status": "Đang hoạt động",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663108d36065d12b644db7c6"
+  },
+  "address": "None",
+  "name": "Còn Văn Ten",
+  "phone": "0987333657",
+  "email": "contentcreator@gmail.com",
+  "dob": {
+    "$date": "2024-04-11T00:00:00.000Z"
+  },
+  "position": "Nhân viên kho",
+  "gender": "Nam",
+  "status": "Đang hoạt động",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663108e56065d12b644db7c8"
+  },
+  "address": "Khuất Duy Tiến, Hà Đông, Hà Nội",
+  "name": "Nguyễn Huynh",
+  "phone": "0987345668",
+  "email": "trumbando@gmail.com",
+  "dob": {
+    "$date": "2003-06-18T00:00:00.000Z"
+  },
+  "position": "Nhân viên bán hàng",
+  "gender": "Nam",
+  "status": "Đang hoạt động",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663108f76065d12b644db7ca"
+  },
+  "address": "None",
+  "name": "Vũ Thành Đạt",
+  "phone": "0819488023",
+  "email": "datvt@gmail.com",
+  "dob": {
+    "$date": "2001-05-22T00:00:00.000Z"
+  },
+  "position": "Nhân viên giao hàng",
+  "gender": "Nam",
+  "status": "Đang hoạt động",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663109b16065d12b644db7cc"
+  },
+  "address": "None",
+  "name": "Trần Thị Liên",
+  "phone": "1458627556",
+  "email": "lienbg@gmail.com",
+  "dob": {
+    "$date": "2000-12-30T00:00:00.000Z"
+  },
+  "position": "Nhân viên bán hàng",
+  "gender": "Nữ",
+  "status": "Tạm nghỉ",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663109c56065d12b644db7ce"
+  },
+  "address": "Cao vòng, Thạch Thất, Hà Nội",
+  "name": "Nguyễn Sắc",
+  "phone": "0965665669",
+  "email": "sichmaiduck@gmail.com",
+  "dob": {
+    "$date": "2003-09-12T00:00:00.000Z"
+  },
+  "position": "Nhân viên bán hàng",
+  "gender": "Nam",
+  "status": "Đang hoạt động",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663109d86065d12b644db7d0"
+  },
+  "address": "none",
+  "name": "Lê Minh Liêm",
+  "phone": "0822938662",
+  "email": "lhhd@gmail.com",
+  "dob": {
+    "$date": "2004-02-22T00:00:00.000Z"
+  },
+  "position": "Nhân viên kho",
+  "gender": "Nam",
+  "status": "Đang hoạt động",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663109f96065d12b644db7d2"
+  },
+  "address": "none",
+  "name": "Hoàng Gia Khôi",
+  "phone": "082293881",
+  "email": "hgk222@gmail.com",
+  "dob": {
+    "$date": "2000-08-12T00:00:00.000Z"
+  },
+  "position": "Nhân viên kho",
+  "gender": "Nam",
+  "status": "Tạm nghỉ",
+  "__v": 0
+}]

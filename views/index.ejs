@@ -1,0 +1,47 @@
+
+<!-- include header -->
+    <%- include('include/_header') %>
+<!-- /include header -->
+
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/job" class="border-shadow">
+                    <span class="text-gradient">Vào trang quản lý ca làm việc</span>
+                </a>
+            </div>
+            <div class="box-nav d-flex justify-between">
+                <a href="/add-user" class="border-shadow">
+                    <span class="text-gradient">Thêm nhân viên <i class="fas fa-user"></i></span>
+                </a>
+            </div>
+
+            <!-- form handling -->
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên</th>
+                            <th>Giới tính</th>
+                            <th>Email</th>
+                            <th>Chức vụ</th>
+                            <th>Trạng thái</th>
+                            <th>Tuỳ chọn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_show') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
