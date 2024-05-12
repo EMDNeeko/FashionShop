@@ -39,6 +39,7 @@ route.put('/api/jobs/:id', controller.updateJ);
 route.delete('/api/jobs/:id', controller.deleteJ);
 
 route.get('/login', services.login);
+route.post('/login', controller.login);
 
 
 module.exports = route

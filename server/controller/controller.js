@@ -1,5 +1,6 @@
 var Userdb = require('../model/model');
 var Jobdb = require('../model/modelJob');
+var Admindb = require('../model/modelAdmin');
 
 // create and save new user
 exports.create = (req,res)=>{
@@ -203,4 +204,27 @@ exports.deleteJ = (req, res) =>{
                 message: "Không thể xoá ca làm việc"
             });
         });
+}
+
+module.exports.login = async (req, res) => {
+
+    try {
+        const admin = await Admindb.findOne({
+            username: req.body.username,
+            password: req.body.password
+        });
+
+        // console.log(admin);
+        if(!admin){
+            return res.status(404).json("Sai tài khoản hoặc mật khẩu");
+        }
+
+        if(admin){
+            // return res.status(200).json(admin);
+            res.redirect("/");
+        }
+    } catch(e) {
+        res.status(500).json(e)
+        // console.log(e);
+    }
 }

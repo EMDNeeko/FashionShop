@@ -13,40 +13,36 @@
 
         <!-- add user form -->
          <!-- form handling -->
-        <form action="/" id="login">
+        <form action="" id="login" method="POST">
             <div class="login">
                 <div class="form-group">
                     <label for="username" class="text-light">Mã đăng nhập</label>
-                    <input type="text" name="username" value="" placeholder="Username">
+                    <input class="username" type="text" name="username" placeholder="Username">
                 </div>
                 <div class="form-group">
                     <label for="password" class="text-light">Mật khẩu</label>
-                    <input type="password" name="password" value="" placeholder="Mật khẩu">
+                    <input class="password" type="password" name="password" placeholder="Mật khẩu">
                 </div>
                 <div class="form-group">
-                    <a href="index.ejs">
-                        <button type="submit" class="btn text-dark update">Đăng nhập</button>                    
-                    </a>
+                    <button type="submit" class="btn text-dark update">Đăng nhập</button>                    
                 </div>
             </div>
         </form>
         <script>
-            const form = document.getElementById('login');
-
-            form.addEventListener('submit', (event) => {
-                event.preventDefault(); // Ngăn chặn hành động mặc định của form
-
-                const username = document.getElementById('username').value;
-                const password = document.getElementById('password').value;
-
-                // Kiểm tra tên đăng nhập và mật khẩu
-                if (username === 'admin' && password === '25112003') {
-                    window.location.href("/")
-                } else {
-                    // Tên đăng nhập hoặc mật khẩu sai
-                    alert('Tên đăng nhập hoặc mật khẩu sai. Vui lòng thử lại.');
-                }
-            });
+            const form = document.querySelector("#login");
+            if (form){
+                const username = document.querySelector("input[name='username']");
+                const password = document.querySelector("input[name='password']");
+                const submit = document.querySelector(".btn");
+                submit.addEventListener("click", (event) =>{
+                    const valueUsername = username.getAttribute("value");
+                    const valuePassword = password.getAttribute("value");
+                    //event.preventDefault();
+                   // submit.setAttribute("value", valueUsername);
+                   // console.log(submit.getAttribute("value"));
+                   console.log(valueUsername);
+                });
+            }
         </script>
        
     </div>
